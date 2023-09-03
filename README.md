@@ -1,3 +1,30 @@
+# react-group-33
+
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [date-fns](https://date-fns.org/)
+- [prop-types](https://www.npmjs.com/package/prop-types)
+
+Icons:
+
+- FaMapMarkerAlt
+- FaUserAlt
+- FaCalendarAlt
+- FaClock
+
+## Utils
+
+```js
+import { format, formatDistanceStrict } from 'date-fns';
+
+const formatEventStart = start => {
+  return format(Date.parse(start), 'dd MMMM yyyy, HH:mm');
+};
+
+const formatEventDuration = (start, end) => {
+  return formatDistanceStrict(Date.parse(start), Date.parse(end));
+};
+```
+
 # React homework template
 
 Этот проект был создан при помощи
